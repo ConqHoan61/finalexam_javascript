@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>PH21285</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>LIST PRODUCTS</h2>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+            Add Product
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Add New Product</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-products">
+                            <div class="form-group">
+                                <label>ID</label>
+                                <input type="text" class="form-control" name="id" placeholder="Enter ID">
+                            </div>
+                            <div class="form-group">
+                                <label>Product Name</label>
+                                <input type="text" class="form-control" name="productName" placeholder="Enter Product Name">
+                            </div>                        
+                            <div class="form-group">
+                            <label>Image</label>
+                            <input type="text" class="form-control" name="image" placeholder="Enter IMAGE URL">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Save</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Edit Modal -->
+        <div id="myEditModal" class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Edit Product</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-products">
+                            <div class="form-group">
+                                <label>ID</label>
+                                <input type="text" class="form-control" name="id" placeholder="Enter ID">
+                            </div>
+                            <div class="form-group">
+                                <label>Product Name</label>
+                                <input type="text" class="form-control" name="productName" placeholder="Enter Product Name">
+                            </div>                        
+                            <div class="form-group">
+                            <label>Image</label>
+                            <input type="text" class="form-control" name="image" placeholder="Enter IMAGE URL">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Update</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <table id="table-products" class="table table-bordered">
+            <tr>
+                <th>ID</th>
+                <th>Name Products</th>
+                <th>Image</th>
+                <th>Action</th>
+            </tr>
+            
+
+        </table>
+    </div>
+    <script src="./main.js" type="module"></script>
+</body>
+
+</html>
